@@ -93,7 +93,7 @@ main {
     font-weight: 600;
     color: $black;
     overflow: hidden;
-    transition: all .2s;
+    transition: letter-spacing .3s, box-shadow .2s;
     cursor: pointer;
     .btn-icon {
       position: absolute;
@@ -164,8 +164,27 @@ main {
         h2 {
           line-height: 1.4;
           margin-bottom: 22px;
-          font-size: 27px;
+          font-size: 32px;
           font-weight: 600;
+          &.h2-with-subtitle {
+            font-size: 43px;
+            line-height: 1;
+            margin-bottom: 27px;
+            img {
+              margin-top: -6px;
+              float: left;
+              width: 71px;
+              height: 71px;
+              border-radius: 14px;
+              margin-right: 25px;
+            }
+            span {
+              display: block;
+              font-size: 18px;
+              font-weight: 400;
+              color: #fffd;
+            }
+          }
         }
         .card-number {
           position: absolute;
