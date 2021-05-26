@@ -241,3 +241,24 @@ main {
     }
   }
 }
+
+#mission,
+#value,
+#vision {
+  .MVV-title {
+    font-size: 37px;
+    font-family: "Honoka", serif;
+    text-align: center;
+    color: #655959;
+    margin: 60px 0 10px;
+  }
+  .MVV-detail-container {
+    font-size: 20px;
+    line-height: 2.5;
+    text-align: center;
+    p {
+      padding: 25px 40px;
+    }
+  }
+  .nowrap { display: inline-block; }
+}

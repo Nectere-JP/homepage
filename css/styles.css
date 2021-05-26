@@ -313,4 +313,34 @@ main .btn:hover {
 #services .service:nth-of-type(even) .card.content-card .card-number::after {
   right: -140px;
 }
+
+#mission .MVV-title,
+#value .MVV-title,
+#vision .MVV-title {
+  font-size: 37px;
+  font-family: "Honoka", serif;
+  text-align: center;
+  color: #655959;
+  margin: 60px 0 10px;
+}
+
+#mission .MVV-detail-container,
+#value .MVV-detail-container,
+#vision .MVV-detail-container {
+  font-size: 20px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+#mission .MVV-detail-container p,
+#value .MVV-detail-container p,
+#vision .MVV-detail-container p {
+  padding: 25px 40px;
+}
+
+#mission .nowrap,
+#value .nowrap,
+#vision .nowrap {
+  display: inline-block;
+}
 /*# sourceMappingURL=styles.css.map */
