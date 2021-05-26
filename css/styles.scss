@@ -1,5 +1,7 @@
 @import "./font.scss";
 @include font-face('SourceHanSansJp', '../fonts/SourceHanSansJP-ExtraLight.otf', 400, null, otf);
+@include font-face('SourceHanSansJp', '../fonts/SourceHanSansJP-Medium.otf', 600, null, otf);
+@include font-face('SourceHanSansJp', '../fonts/SourceHanSansJP-Bold.otf', 700, null, otf);
 @include font-face('Honoka', '../fonts/font_1_honokamin.ttf', 400, null, ttf);
 
 $pink: #e35471;
@@ -7,7 +9,9 @@ $black: #242424;
 
 
 body {
-  font-family: "SourceHanSansJp", sans-serif 
+  background: #fcf4f4;
+  font-family: "SourceHanSansJp", sans-serif;
+  color: $black;
 }
 
 header {
@@ -37,5 +41,184 @@ header {
     font-size: 35px;
     color: #fff;
     z-index: 100;
+  }
+}
+
+main {
+  width: 1100px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  section {
+    margin-bottom: 200px;
+  }
+
+  h1 {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    &::before {
+      content: attr(data-subtitle);
+      position: absolute;
+      top: -35px;
+      left: 0;
+      right: 0;
+      
+      font-size: 30px;
+      font-weight: 400;
+      color: $pink;
+    }
+  }
+
+  .card {
+    border-radius: 40px;
+    box-shadow: 0 0 6px #00000029;
+    background: #fff;
+  }
+
+  .btn {
+    position: relative;
+    display: block;
+    margin-top: 37px;
+    padding: 18px;
+    padding-right: 96px;
+    border-radius: 39px;
+    box-shadow: 0 0 10px #0000004A;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: $black;
+    overflow: hidden;
+    transition: all .2s;
+    cursor: pointer;
+    .btn-icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 116px;
+      height: 100%;
+      margin: auto;
+      clip-path: polygon(35px 0%, 100% 0, 100% 100%, 0% 100%);
+      &.btn-icon-blue { background: #2D4B5D; }
+      &.btn-icon-pink { background: $pink; }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      &::before {
+        width: 52px;
+        height: 3px;
+        right: 25px;
+        background: #fff;
+      }
+
+      &::after {
+        width: 16px;
+        height: 16px;
+        right: 18px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      letter-spacing: 2px;
+      box-shadow: 0 0 20px #0007;
+    }
+  }
+}
+
+#services {
+  .service {
+    display: flex;
+    flex-direction: column;
+    .card {
+      &.image-card {
+        width: 525px;
+        padding: 47px;
+        border: 6px solid $pink;
+        img {
+          display: block;
+          height: 230px;
+          margin: 0 auto;
+        }
+      }
+      &.content-card {
+        position: relative;
+        width: 670px;
+        padding: 47px 66px;
+        background: $pink;
+        color: #fff;
+        h2 {
+          line-height: 1.4;
+          margin-bottom: 22px;
+          font-size: 27px;
+          font-weight: 600;
+        }
+        .card-number {
+          position: absolute;
+          vertical-align: middle;
+          top: 41px;
+          font-size: 37px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: 123px;
+            height: 2px;
+            background: #fff;;
+          }
+        }
+        .description {
+          font-size: 20px;
+          line-height: 1.4;
+        }
+      }
+    }
+    
+    &:nth-of-type(odd) {
+      .card.content-card { 
+        top: -40px; 
+        align-self: flex-end;
+        h2, p.description {
+          margin-left: 55px;
+        }
+        .card-number {
+          transform: rotate(-90deg);
+          left: 24px;
+          &::after { left: -140px; }
+        }
+      }
+    }
+    &:nth-of-type(even) {
+      flex-direction: column-reverse;
+      .card.image-card { align-self: flex-end; }
+      .card.content-card { 
+        bottom: -40px; 
+        h2, p.description {
+          margin-right: 55px;
+        }
+        .card-number {
+          transform: rotate(90deg);
+          right: 24px;
+          &::after { right: -140px; }
+        }
+      }
+    }
   }
 }
