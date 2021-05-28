@@ -1,30 +1,7 @@
-@font-face {
-  font-family: "SourceHanSansJp";
-  font-weight: 400;
-  src: url("../fonts/SourceHanSansJP-ExtraLight.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "SourceHanSansJp";
-  font-weight: 600;
-  src: url("../fonts/SourceHanSansJP-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "SourceHanSansJp";
-  font-weight: 700;
-  src: url("../fonts/SourceHanSansJP-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Honoka";
-  font-weight: 400;
-  src: url("../fonts/font_1_honokamin.ttf") format("truetype");
-}
-
 body {
   background: #fcf4f4;
-  font-family: "SourceHanSansJp", sans-serif;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 200;
   color: #242424;
 }
 
@@ -69,7 +46,8 @@ header .logo {
 }
 
 header p {
-  font-family: "Honoka", serif;
+  font-family: source-han-serif-japanese, serif;
+  font-weight: 600;
   font-size: 35px;
   color: #fff;
   z-index: 100;
@@ -91,7 +69,7 @@ main h1 {
   margin-top: 150px;
   margin-bottom: 50px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -102,7 +80,7 @@ main h1::before {
   left: 0;
   right: 0;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 200;
   color: #e35471;
 }
 
@@ -124,7 +102,7 @@ main .btn {
   background: #fff;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #242424;
   overflow: hidden;
   -webkit-transition: letter-spacing .3s, -webkit-box-shadow .2s;
@@ -222,7 +200,7 @@ main .btn:hover {
   line-height: 1.4;
   margin-bottom: 22px;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #services .service .card.content-card h2.h2-with-subtitle {
@@ -243,7 +221,7 @@ main .btn:hover {
 #services .service .card.content-card h2.h2-with-subtitle span {
   display: block;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 200;
   color: #fffd;
 }
 
@@ -325,7 +303,8 @@ main .btn:hover {
 #value .MVV-title,
 #vision .MVV-title {
   font-size: 37px;
-  font-family: "Honoka", serif;
+  font-family: source-han-serif-japanese, serif;
+  font-weight: 200;
   text-align: center;
   color: #655959;
   margin: 60px 0 10px;
@@ -404,20 +383,20 @@ main .btn:hover {
 #founding-members .members-container .member .name {
   padding: 25px 0 10px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #founding-members .members-container .member .name rt, #founding-members .members-container .member .name rp {
   position: relative;
   bottom: -5px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 #founding-members .members-container .member .position {
   padding-bottom: 30px;
   letter-spacing: 1.2px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   color: #e35471;
 }

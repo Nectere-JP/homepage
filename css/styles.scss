@@ -1,16 +1,11 @@
-@import "./font.scss";
-@include font-face('SourceHanSansJp', '../fonts/SourceHanSansJP-ExtraLight.otf', 400, null, otf);
-@include font-face('SourceHanSansJp', '../fonts/SourceHanSansJP-Medium.otf', 600, null, otf);
-@include font-face('SourceHanSansJp', '../fonts/SourceHanSansJP-Bold.otf', 700, null, otf);
-@include font-face('Honoka', '../fonts/font_1_honokamin.ttf', 400, null, ttf);
-
 $pink: #e35471;
 $black: #242424;
 
 
 body {
   background: #fcf4f4;
-  font-family: "SourceHanSansJp", sans-serif;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 200;
   color: $black;
 }
 
@@ -41,7 +36,8 @@ header {
     filter: drop-shadow(0 0 40px #FFF) drop-shadow(0 0 40px #FFF8);
   }
   p {
-    font-family: "Honoka", serif;
+    font-family: source-han-serif-japanese, serif;
+    font-weight: 600;
     font-size: 35px;
     color: #fff;
     z-index: 100;
@@ -62,7 +58,7 @@ main {
     margin-top: 150px;
     margin-bottom: 50px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     &::before {
       content: attr(data-subtitle);
@@ -72,7 +68,7 @@ main {
       right: 0;
       
       font-size: 30px;
-      font-weight: 400;
+      font-weight: 200;
       color: $pink;
     }
   }
@@ -93,7 +89,7 @@ main {
     background: #fff;
     text-align: center;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: $black;
     overflow: hidden;
     transition: letter-spacing .3s, box-shadow .2s;
@@ -169,7 +165,7 @@ main {
           line-height: 1.4;
           margin-bottom: 22px;
           font-size: 32px;
-          font-weight: 600;
+          font-weight: 500;
           &.h2-with-subtitle {
             font-size: 43px;
             line-height: 1;
@@ -185,7 +181,7 @@ main {
             span {
               display: block;
               font-size: 18px;
-              font-weight: 400;
+              font-weight: 200;
               color: #fffd;
             }
           }
@@ -251,7 +247,8 @@ main {
 #vision {
   .MVV-title {
     font-size: 37px;
-    font-family: "Honoka", serif;
+    font-family: source-han-serif-japanese, serif;
+    font-weight: 200;
     text-align: center;
     color: #655959;
     margin: 60px 0 10px;
@@ -308,18 +305,18 @@ main {
       .name {
         padding: 25px 0 10px;
         font-size: 28px;
-        font-weight: 600;
+        font-weight: 500;
         rt, rp {
           position: relative;
           bottom: -5px;
           font-size: 12px;
-          font-weight: 400;
+          font-weight: 200;
         }
       }
       .position {
         padding-bottom: 30px;
         letter-spacing: 1.2px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 12px;
         color: $pink;
       }
