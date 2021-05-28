@@ -416,3 +416,33 @@ main {
     }
   }
 }
+
+#SNS {
+  .account {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .account-id {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 1;
+      margin-right: 15px;
+      width: 465px;
+      border-radius: 9px;
+      img {
+        width: 84px;
+      }
+      p {
+        margin-top: 30px;
+        font-size: 33px;
+        font-weight: 500;
+        color: #00C4FD;
+      }
+    }
+    a.twitter-timeline {
+      flex-grow: 1;
+    }
+  }
+}
