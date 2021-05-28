@@ -14,8 +14,8 @@ body {
   color: $black;
 }
 
-.webp {
-  header {background-image: url("../imgs/header-bg.webp") !important}
+.no-webp {
+  header {background-image: url("../imgs/header-bg.jpg") !important}
 }
 
 header {
@@ -26,7 +26,7 @@ header {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("../imgs/header-bg.jpg");
+  background-image: url("../imgs/header-bg.webp");
   background-size: cover;
   .pink-filter {
     position: absolute;
