@@ -329,3 +329,23 @@ main {
     }
   }
 }
+
+#company {
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    tr {
+      border: 5px solid #CBCBCB;
+      th {
+        padding: 27px 80px 27px 80px;
+        font-size: 25px;
+      }
+      td {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 27px 0;
+      }
+    }
+  }
+}

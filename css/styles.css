@@ -407,4 +407,25 @@ main .btn:hover {
   font-size: 15px;
   line-height: 2.4;
 }
+
+#company table {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#company table tr {
+  border: 5px solid #CBCBCB;
+}
+
+#company table tr th {
+  padding: 27px 80px 27px 80px;
+  font-size: 25px;
+}
+
+#company table tr td {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 27px 0;
+}
 /*# sourceMappingURL=styles.css.map */
