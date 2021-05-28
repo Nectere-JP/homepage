@@ -14,6 +14,10 @@ body {
   color: $black;
 }
 
+.webp {
+  header {background-image: url("../imgs/header-bg.webp") !important}
+}
+
 header {
   display: flex;
   flex-direction: column;

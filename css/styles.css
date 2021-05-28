@@ -28,6 +28,10 @@ body {
   color: #242424;
 }
 
+.webp header {
+  background-image: url("../imgs/header-bg.webp") !important;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
