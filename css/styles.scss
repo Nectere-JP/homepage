@@ -1,6 +1,31 @@
 $pink: #e35471;
 $black: #242424;
 
+// $sm: 576px;
+// $md: 768px;
+// $lg: 992px;
+// $xl: 1200px;
+// @mixin sm {
+//   @media (min-width: ($sm)) {
+//     @content;
+//   }
+// }
+$md: 992px;
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
+// @mixin lg {
+//   @media (max-width: ($lg)) {
+//     @content;
+//   }
+// }
+// @mixin xl {
+//   @media (max-width: ($xl)) {
+//     @content;
+//   }
+// }
 
 body {
   background: #fcf4f4;
@@ -34,7 +59,7 @@ header {
   .logo {
     width: 685px;
     filter: drop-shadow(0 0 40px #FFF) drop-shadow(0 0 40px #FFF8);
-
+    @include md {width: 494px;}
   }
   p {
     font-family: source-han-serif-japanese, serif;
@@ -42,6 +67,7 @@ header {
     font-size: 35px;
     color: #fff;
     z-index: 100;
+    @include md {font-size: 21px;}
   }
 }
 
@@ -49,6 +75,7 @@ main {
   width: 1100px;
   margin: 0 auto;
   box-sizing: content-box;
+  @include md {width: 664px;}
 
   section {
     margin-bottom: 200px;
@@ -95,6 +122,7 @@ main {
     overflow: hidden;
     transition: letter-spacing .3s, box-shadow .2s;
     cursor: pointer;
+    @include md {font-size: 15px;}
     .btn-icon {
       position: absolute;
       top: 0;
@@ -150,10 +178,12 @@ main {
         width: 525px;
         padding: 47px;
         border: 6px solid $pink;
+        @include md { width: 444px; }
         img {
           display: block;
           height: 230px;
           margin: 0 auto;
+          @include md { height: 173px; }
         }
       }
       &.content-card {
@@ -162,15 +192,21 @@ main {
         padding: 47px 66px;
         background: $pink;
         color: #fff;
+        @include md {width: 567px;}
         h2 {
           line-height: 1.4;
           margin-bottom: 22px;
           font-size: 32px;
           font-weight: 500;
+          @include md {font-size: 22px;}
           &.h2-with-subtitle {
             font-size: 43px;
             line-height: 1;
             margin-bottom: 27px;
+            @include md {
+              font-size: 36px;
+              margin-bottom: 30px;
+            }
             img {
               margin-top: -6px;
               float: left;
@@ -178,12 +214,18 @@ main {
               height: 71px;
               border-radius: 14px;
               margin-right: 25px;
+              @include md {
+                width: 69px;
+                height: 69px;
+                margin-top: -12px;
+              }
             }
             span {
               display: block;
               font-size: 18px;
               font-weight: 200;
               color: #fffd;
+              @include md {font-size: 15px;}
             }
           }
         }
@@ -192,6 +234,7 @@ main {
           vertical-align: middle;
           top: 41px;
           font-size: 37px;
+          @include md {font-size: 25px;}
           &::after {
             content: "";
             position: absolute;
@@ -202,11 +245,16 @@ main {
             width: 123px;
             height: 2px;
             background: #fff;;
+            @include md {
+              width: 86px;
+              height: 1px;
+            }
           }
         }
         .description {
           font-size: 20px;
           line-height: 1.4;
+          @include md {font-size: 17px;}
         }
       }
     }
@@ -217,11 +265,15 @@ main {
         align-self: flex-end;
         h2, p.description {
           margin-left: 55px;
+          @include md {margin-left: 10px;}
         }
         .card-number {
           transform: rotate(-90deg);
           left: 24px;
-          &::after { left: -140px; }
+          &::after {
+            left: -140px;
+            @include md {left: -100px;}
+          }
         }
       }
     }
@@ -232,11 +284,15 @@ main {
         bottom: -40px; 
         h2, p.description {
           margin-right: 55px;
+          @include md {margin-right: 0;}
         }
         .card-number {
           transform: rotate(90deg);
           right: 24px;
-          &::after { right: -140px; }
+          &::after {
+            right: -140px;
+            @include md {right: -100px;}
+          }
         }
       }
     }

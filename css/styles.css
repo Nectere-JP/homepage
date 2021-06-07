@@ -45,6 +45,12 @@ header .logo {
           filter: drop-shadow(0 0 40px #FFF) drop-shadow(0 0 40px #FFF8);
 }
 
+@media screen and (max-width: 992px) {
+  header .logo {
+    width: 494px;
+  }
+}
+
 header p {
   font-family: source-han-serif-japanese, serif;
   font-weight: 600;
@@ -53,11 +59,23 @@ header p {
   z-index: 100;
 }
 
+@media screen and (max-width: 992px) {
+  header p {
+    font-size: 21px;
+  }
+}
+
 main {
   width: 1100px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    width: 664px;
+  }
 }
 
 main section {
@@ -110,6 +128,12 @@ main .btn {
   transition: letter-spacing .3s, box-shadow .2s;
   transition: letter-spacing .3s, box-shadow .2s, -webkit-box-shadow .2s;
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  main .btn {
+    font-size: 15px;
+  }
 }
 
 main .btn .btn-icon {
@@ -182,10 +206,22 @@ main .btn:hover {
   border: 6px solid #e35471;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service .card.image-card {
+    width: 444px;
+  }
+}
+
 #services .service .card.image-card img {
   display: block;
   height: 230px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  #services .service .card.image-card img {
+    height: 173px;
+  }
 }
 
 #services .service .card.content-card {
@@ -196,6 +232,12 @@ main .btn:hover {
   color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card {
+    width: 567px;
+  }
+}
+
 #services .service .card.content-card h2 {
   line-height: 1.4;
   margin-bottom: 22px;
@@ -203,10 +245,23 @@ main .btn:hover {
   font-weight: 500;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card h2 {
+    font-size: 22px;
+  }
+}
+
 #services .service .card.content-card h2.h2-with-subtitle {
   font-size: 43px;
   line-height: 1;
   margin-bottom: 27px;
+}
+
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card h2.h2-with-subtitle {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 #services .service .card.content-card h2.h2-with-subtitle img {
@@ -218,6 +273,14 @@ main .btn:hover {
   margin-right: 25px;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card h2.h2-with-subtitle img {
+    width: 69px;
+    height: 69px;
+    margin-top: -12px;
+  }
+}
+
 #services .service .card.content-card h2.h2-with-subtitle span {
   display: block;
   font-size: 18px;
@@ -225,11 +288,23 @@ main .btn:hover {
   color: #fffd;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card h2.h2-with-subtitle span {
+    font-size: 15px;
+  }
+}
+
 #services .service .card.content-card .card-number {
   position: absolute;
   vertical-align: middle;
   top: 41px;
   font-size: 37px;
+}
+
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card .card-number {
+    font-size: 25px;
+  }
 }
 
 #services .service .card.content-card .card-number::after {
@@ -244,9 +319,22 @@ main .btn:hover {
   background: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card .card-number::after {
+    width: 86px;
+    height: 1px;
+  }
+}
+
 #services .service .card.content-card .description {
   font-size: 20px;
   line-height: 1.4;
+}
+
+@media screen and (max-width: 992px) {
+  #services .service .card.content-card .description {
+    font-size: 17px;
+  }
 }
 
 #services .service:nth-of-type(odd) .card.content-card {
@@ -259,6 +347,12 @@ main .btn:hover {
   margin-left: 55px;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service:nth-of-type(odd) .card.content-card h2, #services .service:nth-of-type(odd) .card.content-card p.description {
+    margin-left: 10px;
+  }
+}
+
 #services .service:nth-of-type(odd) .card.content-card .card-number {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -267,6 +361,12 @@ main .btn:hover {
 
 #services .service:nth-of-type(odd) .card.content-card .card-number::after {
   left: -140px;
+}
+
+@media screen and (max-width: 992px) {
+  #services .service:nth-of-type(odd) .card.content-card .card-number::after {
+    left: -100px;
+  }
 }
 
 #services .service:nth-of-type(even) {
@@ -289,6 +389,12 @@ main .btn:hover {
   margin-right: 55px;
 }
 
+@media screen and (max-width: 992px) {
+  #services .service:nth-of-type(even) .card.content-card h2, #services .service:nth-of-type(even) .card.content-card p.description {
+    margin-right: 0;
+  }
+}
+
 #services .service:nth-of-type(even) .card.content-card .card-number {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -297,6 +403,12 @@ main .btn:hover {
 
 #services .service:nth-of-type(even) .card.content-card .card-number::after {
   right: -140px;
+}
+
+@media screen and (max-width: 992px) {
+  #services .service:nth-of-type(even) .card.content-card .card-number::after {
+    right: -100px;
+  }
 }
 
 #mission .MVV-title,
