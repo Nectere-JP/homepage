@@ -748,6 +748,12 @@ main .nowrap {
   border: 5px solid #CBCBCB;
 }
 
+@media (max-width: 767px) {
+  #company table tr {
+    border-width: 3px;
+  }
+}
+
 #company table tr th {
   white-space: nowrap;
   padding: 27px 80px 27px 80px;
@@ -761,10 +767,26 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #company table tr th {
+    display: block;
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+  }
+}
+
 #company table tr td {
   font-size: 20px;
   line-height: 25px;
   padding: 27px 0;
+}
+
+@media (max-width: 767px) {
+  #company table tr td {
+    display: block;
+    padding: 20px 16px 20px 42px;
+    font-size: 16px;
+  }
 }
 
 #contact .contact-grid {

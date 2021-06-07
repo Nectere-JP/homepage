@@ -460,16 +460,27 @@ main {
     @include md {width: 90%;}
     tr {
       border: 5px solid #CBCBCB;
+      @include sm {border-width: 3px;}
       th {
         white-space: nowrap;
         padding: 27px 80px 27px 80px;
         font-size: 25px;
         @include md {padding-left: 37px; padding-right: 59px;}
+        @include sm {
+          display: block;
+          padding: 20px 20px 0 20px;
+          font-size: 20px;
+        }
       }
       td {
         font-size: 20px;
         line-height: 25px;
         padding: 27px 0;
+        @include sm {
+          display: block;
+          padding: 20px 16px 20px 42px;
+          font-size: 16px;
+        }
       }
     }
   }
