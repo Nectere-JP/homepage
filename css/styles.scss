@@ -34,6 +34,7 @@ header {
   .logo {
     width: 685px;
     filter: drop-shadow(0 0 40px #FFF) drop-shadow(0 0 40px #FFF8);
+
   }
   p {
     font-family: source-han-serif-japanese, serif;
@@ -443,6 +444,44 @@ main {
     }
     a.twitter-timeline {
       flex-grow: 1;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 76px calc((100vw - 1134px)/2);
+  background: $black;
+  .footer-logo {
+    img {
+      width: 597px;
+      filter: drop-shadow(0 0 12px #FFF);
+    }
+    h2 {
+      font-family: source-han-serif-japanese, serif;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  nav {
+    color: #fff;
+    h3 {
+      padding: 33px 0 9px;
+      &:first-of-type{ padding-top: 0; }
+      font-size: 28px;
+      font-weight: 500;
+    }
+    ul {
+      list-style: circle;
+      padding-left: 47px;
+      li {
+        font-size: 20px;
+        padding: 9px 0;
+        text-decoration: underline;
+      }
     }
   }
 }

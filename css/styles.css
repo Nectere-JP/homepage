@@ -582,4 +582,56 @@ main .btn:hover {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 76px calc((100vw - 1134px)/2);
+  background: #242424;
+}
+
+footer .footer-logo img {
+  width: 597px;
+  -webkit-filter: drop-shadow(0 0 12px #FFF);
+          filter: drop-shadow(0 0 12px #FFF);
+}
+
+footer .footer-logo h2 {
+  font-family: source-han-serif-japanese, serif;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer nav {
+  color: #fff;
+}
+
+footer nav h3 {
+  padding: 33px 0 9px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+footer nav h3:first-of-type {
+  padding-top: 0;
+}
+
+footer nav ul {
+  list-style: circle;
+  padding-left: 47px;
+}
+
+footer nav ul li {
+  font-size: 20px;
+  padding: 9px 0;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=styles.css.map */
