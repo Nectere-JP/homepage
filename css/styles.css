@@ -51,6 +51,12 @@ header .logo {
   }
 }
 
+@media (max-width: 767px) {
+  header .logo {
+    width: 296px;
+  }
+}
+
 header p {
   font-family: source-han-serif-japanese, serif;
   font-weight: 600;
@@ -62,6 +68,12 @@ header p {
 @media screen and (max-width: 1200px) {
   header p {
     font-size: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  header p {
+    font-size: 13px;
   }
 }
 
@@ -78,6 +90,12 @@ main {
   }
 }
 
+@media (max-width: 767px) {
+  main {
+    width: 310px;
+  }
+}
+
 main section {
   margin-bottom: 200px;
 }
@@ -91,6 +109,14 @@ main h1 {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  main h1 {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-size: 27px;
+  }
+}
+
 main h1::before {
   content: attr(data-subtitle);
   position: absolute;
@@ -100,6 +126,13 @@ main h1::before {
   font-size: 30px;
   font-weight: 200;
   color: #e35471;
+}
+
+@media (max-width: 767px) {
+  main h1::before {
+    top: -18px;
+    font-size: 17px;
+  }
 }
 
 main .card {
@@ -136,6 +169,13 @@ main .btn {
   }
 }
 
+@media (max-width: 767px) {
+  main .btn {
+    padding-right: 68px;
+    font-size: 12px;
+  }
+}
+
 main .btn .btn-icon {
   position: absolute;
   top: 0;
@@ -146,6 +186,12 @@ main .btn .btn-icon {
   margin: auto;
   -webkit-clip-path: polygon(35px 0%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(35px 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 767px) {
+  main .btn .btn-icon {
+    width: 80px;
+  }
 }
 
 main .btn .btn-icon.btn-icon-blue {
@@ -171,6 +217,13 @@ main .btn .btn-icon::before {
   background: #fff;
 }
 
+@media (max-width: 767px) {
+  main .btn .btn-icon::before {
+    width: 28px;
+    height: 1px;
+  }
+}
+
 main .btn .btn-icon::after {
   width: 16px;
   height: 16px;
@@ -178,6 +231,12 @@ main .btn .btn-icon::after {
   border: 3px solid #fff;
   border-radius: 50%;
   background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  main .btn .btn-icon::after {
+    border-width: 1px;
+  }
 }
 
 main .btn:hover {
@@ -204,6 +263,12 @@ main .nowrap {
   border-radius: 40px;
 }
 
+@media (max-width: 767px) {
+  #services .service .card {
+    border-radius: 14px;
+  }
+}
+
 #services .service .card.image-card {
   width: 525px;
   padding: 47px;
@@ -216,6 +281,14 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.image-card {
+    width: 205px;
+    border-width: 3px;
+    padding: 25px;
+  }
+}
+
 #services .service .card.image-card img {
   display: block;
   height: 230px;
@@ -225,6 +298,12 @@ main .nowrap {
 @media screen and (max-width: 1200px) {
   #services .service .card.image-card img {
     height: 173px;
+  }
+}
+
+@media (max-width: 767px) {
+  #services .service .card.image-card img {
+    height: 80px;
   }
 }
 
@@ -242,6 +321,13 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.content-card {
+    width: 100%;
+    padding: 43px 25px;
+  }
+}
+
 #services .service .card.content-card h2 {
   line-height: 1.4;
   margin-bottom: 22px;
@@ -255,6 +341,13 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.content-card h2 {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+}
+
 #services .service .card.content-card h2.h2-with-subtitle {
   font-size: 43px;
   line-height: 1;
@@ -265,6 +358,12 @@ main .nowrap {
   #services .service .card.content-card h2.h2-with-subtitle {
     font-size: 36px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #services .service .card.content-card h2.h2-with-subtitle {
+    font-size: 25px;
   }
 }
 
@@ -285,6 +384,16 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.content-card h2.h2-with-subtitle img {
+    width: 39px;
+    height: 39px;
+    border-radius: 7px;
+    margin-top: -3px;
+    margin-right: 10px;
+  }
+}
+
 #services .service .card.content-card h2.h2-with-subtitle span {
   display: block;
   font-size: 18px;
@@ -298,6 +407,12 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.content-card h2.h2-with-subtitle span {
+    font-size: 10px;
+  }
+}
+
 #services .service .card.content-card .card-number {
   position: absolute;
   vertical-align: middle;
@@ -308,6 +423,13 @@ main .nowrap {
 @media screen and (max-width: 1200px) {
   #services .service .card.content-card .card-number {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  #services .service .card.content-card .card-number {
+    font-size: 16px;
+    top: 15px;
   }
 }
 
@@ -330,6 +452,12 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.content-card .card-number::after {
+    width: 62px;
+  }
+}
+
 #services .service .card.content-card .description {
   font-size: 20px;
   line-height: 1.4;
@@ -341,10 +469,24 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service .card.content-card .description {
+    font-size: 13px;
+    padding: 0 20px;
+  }
+}
+
 #services .service:nth-of-type(odd) .card.content-card {
   top: -40px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media (max-width: 767px) {
+  #services .service:nth-of-type(odd) .card.content-card {
+    top: 0;
+    margin-top: 5px;
+  }
 }
 
 #services .service:nth-of-type(odd) .card.content-card h2, #services .service:nth-of-type(odd) .card.content-card p.description {
@@ -363,6 +505,12 @@ main .nowrap {
   left: 24px;
 }
 
+@media (max-width: 767px) {
+  #services .service:nth-of-type(odd) .card.content-card .card-number {
+    left: 10px;
+  }
+}
+
 #services .service:nth-of-type(odd) .card.content-card .card-number::after {
   left: -140px;
 }
@@ -373,11 +521,26 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #services .service:nth-of-type(odd) .card.content-card .card-number::after {
+    left: -70px;
+  }
+}
+
 #services .service:nth-of-type(even) {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+@media (max-width: 767px) {
+  #services .service:nth-of-type(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #services .service:nth-of-type(even) .card.image-card {
@@ -387,6 +550,13 @@ main .nowrap {
 
 #services .service:nth-of-type(even) .card.content-card {
   bottom: -40px;
+}
+
+@media (max-width: 767px) {
+  #services .service:nth-of-type(even) .card.content-card {
+    bottom: 0;
+    margin-top: 5px;
+  }
 }
 
 #services .service:nth-of-type(even) .card.content-card h2, #services .service:nth-of-type(even) .card.content-card p.description {
@@ -405,6 +575,12 @@ main .nowrap {
   right: 24px;
 }
 
+@media (max-width: 767px) {
+  #services .service:nth-of-type(even) .card.content-card .card-number {
+    right: 10px;
+  }
+}
+
 #services .service:nth-of-type(even) .card.content-card .card-number::after {
   right: -140px;
 }
@@ -412,6 +588,18 @@ main .nowrap {
 @media screen and (max-width: 1200px) {
   #services .service:nth-of-type(even) .card.content-card .card-number::after {
     right: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  #services .service:nth-of-type(even) .card.content-card .card-number::after {
+    right: -70px;
+  }
+}
+
+@media (max-width: 767px) {
+  #services .service:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 
@@ -814,6 +1002,15 @@ footer {
   background: #242424;
 }
 
+@media screen and (max-width: 1200px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 footer .footer-logo img {
   width: 597px;
   -webkit-filter: drop-shadow(0 0 12px #FFF);
@@ -829,11 +1026,19 @@ footer .footer-logo h2 {
 
 footer nav {
   color: #fff;
+  margin-right: 52px;
+}
+
+@media screen and (max-width: 1200px) {
+  footer nav {
+    margin-top: 100px;
+    margin-right: 0;
+  }
 }
 
 footer nav h3 {
   padding: 33px 0 9px;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -847,7 +1052,7 @@ footer nav ul {
 }
 
 footer nav ul li {
-  font-size: 20px;
+  font-size: 16px;
   padding: 9px 0;
   text-decoration: underline;
 }

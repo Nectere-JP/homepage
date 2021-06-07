@@ -1,21 +1,21 @@
 $pink: #e35471;
 $black: #242424;
 
-// $sm: 576px;
-// $md: 768px;
-// $lg: 992px;
-// $xl: 1200px;
-// @mixin sm {
-//   @media (min-width: ($sm)) {
-//     @content;
-//   }
-// }
+
+$sm: 767px;
+@mixin sm {
+  @media (max-width: ($sm)) {
+    @content;
+  }
+}
 $md: 1200px;
 @mixin md {
   @media screen and (max-width: ($md)) {
     @content;
   }
 }
+// $lg: 992px;
+// $xl: 1200px;
 // @mixin lg {
 //   @media (max-width: ($lg)) {
 //     @content;
@@ -60,6 +60,7 @@ header {
     width: 685px;
     filter: drop-shadow(0 0 40px #FFF) drop-shadow(0 0 40px #FFF8);
     @include md {width: 494px;}
+    @include sm {width: 296px;}
   }
   p {
     font-family: source-han-serif-japanese, serif;
@@ -68,6 +69,7 @@ header {
     color: #fff;
     z-index: 100;
     @include md {font-size: 21px;}
+    @include sm {font-size: 13px;}
   }
 }
 
@@ -76,6 +78,7 @@ main {
   margin: 0 auto;
   box-sizing: content-box;
   @include md {width: 664px;}
+  @include sm {width: 310px;}
 
   section {
     margin-bottom: 200px;
@@ -88,16 +91,17 @@ main {
     font-size: 50px;
     font-weight: 600;
     text-align: center;
+    @include sm {margin-top: 90px; margin-bottom: 30px; font-size: 27px;}
     &::before {
       content: attr(data-subtitle);
       position: absolute;
       top: -35px;
       left: 0;
       right: 0;
-      
       font-size: 30px;
       font-weight: 200;
       color: $pink;
+      @include sm {top: -18px; font-size: 17px;}
     }
   }
 
@@ -123,6 +127,10 @@ main {
     transition: letter-spacing .3s, box-shadow .2s;
     cursor: pointer;
     @include md {font-size: 15px;}
+    @include sm {
+      padding-right: 68px;
+      font-size: 12px;
+    }
     .btn-icon {
       position: absolute;
       top: 0;
@@ -132,6 +140,8 @@ main {
       height: 100%;
       margin: auto;
       clip-path: polygon(35px 0%, 100% 0, 100% 100%, 0% 100%);
+      @include sm {width: 80px;}
+      
       &.btn-icon-blue { background: #2D4B5D; }
       &.btn-icon-pink { background: $pink; }
 
@@ -149,6 +159,7 @@ main {
         height: 3px;
         right: 25px;
         background: #fff;
+        @include sm {width: 28px; height: 1px;}
       }
 
       &::after {
@@ -158,6 +169,7 @@ main {
         border: 3px solid #fff;
         border-radius: 50%;
         background-color: transparent;
+        @include sm {border-width: 1px;;}
       }
     }
 
@@ -176,16 +188,19 @@ main {
     flex-direction: column;
     .card {
       border-radius: 40px;
+      @include sm {border-radius: 14px;}
       &.image-card {
         width: 525px;
         padding: 47px;
         border: 6px solid $pink;
-        @include md { width: 444px; }
+        @include md {width: 444px;}
+        @include sm {width: 205px; border-width: 3px; padding: 25px;}
         img {
           display: block;
           height: 230px;
           margin: 0 auto;
-          @include md { height: 173px; }
+          @include md {height: 173px;}
+          @include sm {height: 80px;}
         }
       }
       &.content-card {
@@ -195,12 +210,21 @@ main {
         background: $pink;
         color: #fff;
         @include md {width: 567px;}
+        @include sm {
+          width: 100%;
+          padding: 43px 25px;
+        }
+        
         h2 {
           line-height: 1.4;
           margin-bottom: 22px;
           font-size: 32px;
           font-weight: 500;
           @include md {font-size: 22px;}
+          @include sm {
+            font-size: 20px;
+            padding: 0 20px;
+          }
           &.h2-with-subtitle {
             font-size: 43px;
             line-height: 1;
@@ -209,6 +233,7 @@ main {
               font-size: 36px;
               margin-bottom: 30px;
             }
+            @include sm{font-size: 25px;}
             img {
               margin-top: -6px;
               float: left;
@@ -221,6 +246,13 @@ main {
                 height: 69px;
                 margin-top: -12px;
               }
+              @include sm {
+                width: 39px;
+                height: 39px;
+                border-radius: 7px;
+                margin-top: -3px;
+                margin-right: 10px;
+              }
             }
             span {
               display: block;
@@ -228,6 +260,7 @@ main {
               font-weight: 200;
               color: #fffd;
               @include md {font-size: 15px;}
+              @include sm {font-size: 10px;}
             }
           }
         }
@@ -237,6 +270,10 @@ main {
           top: 41px;
           font-size: 37px;
           @include md {font-size: 25px;}
+          @include sm {
+            font-size: 16px;
+            top: 15px;
+          }
           &::after {
             content: "";
             position: absolute;
@@ -251,12 +288,17 @@ main {
               width: 86px;
               height: 1px;
             }
+            @include sm {width: 62px;}
           }
         }
         .description {
           font-size: 20px;
           line-height: 1.4;
           @include md {font-size: 17px;}
+          @include sm {
+            font-size: 13px;
+            padding: 0 20px;
+          }
         }
       }
     }
@@ -265,6 +307,7 @@ main {
       .card.content-card { 
         top: -40px; 
         align-self: flex-end;
+        @include sm {top: 0; margin-top: 5px;}
         h2, p.description {
           margin-left: 55px;
           @include md {margin-left: 10px;}
@@ -272,18 +315,22 @@ main {
         .card-number {
           transform: rotate(-90deg);
           left: 24px;
+          @include sm {left: 10px;}
           &::after {
             left: -140px;
             @include md {left: -100px;}
+            @include sm {left: -70px;}
           }
         }
       }
     }
     &:nth-of-type(even) {
       flex-direction: column-reverse;
+      @include sm {flex-direction: column;}
       .card.image-card { align-self: flex-end; }
       .card.content-card { 
         bottom: -40px; 
+        @include sm {bottom: 0; margin-top: 5px;}
         h2, p.description {
           margin-right: 55px;
           @include md {margin-right: 0;}
@@ -291,12 +338,17 @@ main {
         .card-number {
           transform: rotate(90deg);
           right: 24px;
+          @include sm {right: 10px;}
           &::after {
             right: -140px;
             @include md {right: -100px;}
+            @include sm {right: -70px;}
           }
         }
       }
+    }
+    @include sm {
+      &:not(:last-child) {margin-bottom: 50px;}
     }
   }
 }
@@ -554,6 +606,7 @@ footer {
   align-items: center;
   padding: 76px calc((100vw - 1134px)/2);
   background: $black;
+  @include md {flex-direction: column;}
   .footer-logo {
     img {
       width: 597px;
@@ -568,17 +621,19 @@ footer {
   }
   nav {
     color: #fff;
+    margin-right: 52px;
+    @include md {margin-top: 100px; margin-right: 0;}
     h3 {
       padding: 33px 0 9px;
       &:first-of-type{ padding-top: 0; }
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 500;
     }
     ul {
       list-style: circle;
       padding-left: 47px;
       li {
-        font-size: 20px;
+        font-size: 16px;
         padding: 9px 0;
         text-decoration: underline;
       }
