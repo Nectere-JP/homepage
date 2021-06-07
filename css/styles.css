@@ -724,6 +724,17 @@ main .nowrap {
           align-items: stretch;
 }
 
+@media screen and (max-width: 1200px) {
+  #SNS .account {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 507px;
+    margin: 0 auto;
+  }
+}
+
 #SNS .account .account-id {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,13 +751,32 @@ main .nowrap {
           align-items: center;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  margin-right: 15px;
   width: 465px;
+  margin-right: 15px;
+  padding: 27px;
   border-radius: 9px;
+}
+
+@media screen and (max-width: 1200px) {
+  #SNS .account .account-id {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 #SNS .account .account-id img {
   width: 84px;
+}
+
+@media screen and (max-width: 1200px) {
+  #SNS .account .account-id img {
+    width: 60px;
+  }
 }
 
 #SNS .account .account-id p {
@@ -754,6 +784,14 @@ main .nowrap {
   font-size: 33px;
   font-weight: 500;
   color: #00C4FD;
+}
+
+@media screen and (max-width: 1200px) {
+  #SNS .account .account-id p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 26px;
+  }
 }
 
 #SNS .account a.twitter-timeline {
