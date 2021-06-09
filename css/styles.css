@@ -1113,10 +1113,16 @@ main .nowrap {
   }
 }
 
-#SNS .account a.twitter-timeline {
+#SNS .account .twitter-timeline {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+  #SNS .account .twitter-timeline {
+    max-height: 350px;
+  }
 }
 
 footer {
@@ -1142,10 +1148,23 @@ footer {
   }
 }
 
+@media (max-width: 767px) {
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 footer .footer-logo img {
   width: 597px;
   -webkit-filter: drop-shadow(0 0 12px #FFF);
           filter: drop-shadow(0 0 12px #FFF);
+}
+
+@media (max-width: 767px) {
+  footer .footer-logo img {
+    width: 342px;
+  }
 }
 
 footer .footer-logo h2 {
@@ -1153,6 +1172,12 @@ footer .footer-logo h2 {
   font-size: 20px;
   text-align: center;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  footer .footer-logo h2 {
+    font-size: 12px;
+  }
 }
 
 footer nav {
@@ -1167,6 +1192,12 @@ footer nav {
   }
 }
 
+@media (max-width: 767px) {
+  footer nav {
+    margin-top: 50px;
+  }
+}
+
 footer nav h3 {
   padding: 33px 0 9px;
   font-size: 22px;
@@ -1175,6 +1206,12 @@ footer nav h3 {
 
 footer nav h3:first-of-type {
   padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  footer nav h3 {
+    font-size: 16px;
+  }
 }
 
 footer nav ul {
@@ -1186,5 +1223,12 @@ footer nav ul li {
   font-size: 16px;
   padding: 9px 0;
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  footer nav ul li {
+    font-size: 12px;
+    padding: 5px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

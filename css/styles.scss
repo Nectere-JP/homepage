@@ -631,8 +631,11 @@ main {
         @include sm {font-size: 15px;}
       }
     }
-    a.twitter-timeline {
+    .twitter-timeline {
       flex-grow: 1;
+      @include sm {
+        max-height: 350px;
+      }
     }
   }
 }
@@ -644,27 +647,32 @@ footer {
   padding: 76px calc((100vw - 1134px)/2);
   background: $black;
   @include md {flex-direction: column;}
+  @include sm {padding-top: 50px; padding-bottom: 50px;}
   .footer-logo {
     img {
       width: 597px;
       filter: drop-shadow(0 0 12px #FFF);
+      @include sm {width: 342px;}
     }
     h2 {
       font-family: source-han-serif-japanese, serif;
       font-size: 20px;
       text-align: center;
       color: #fff;
+      @include sm {font-size: 12px;}
     }
   }
   nav {
     color: #fff;
     margin-right: 52px;
     @include md {margin-top: 100px; margin-right: 0;}
+    @include sm {margin-top: 50px;}
     h3 {
       padding: 33px 0 9px;
       &:first-of-type{ padding-top: 0; }
       font-size: 22px;
       font-weight: 500;
+      @include sm {font-size: 16px}
     }
     ul {
       list-style: circle;
@@ -673,6 +681,7 @@ footer {
         font-size: 16px;
         padding: 9px 0;
         text-decoration: underline;
+        @include sm {font-size: 12px; padding: 5px 0;}
       }
     }
   }
