@@ -497,6 +497,10 @@ main {
       grid-template-columns: 530px;
       grid-template-rows: 140px 140px 140px 235px;
     }
+    @include sm {
+      grid-template-columns: 100%;
+      grid-template-rows: 140px 140px 190px 190px;
+    }
     .card {
       display: flex;
       flex-direction: column;
@@ -508,7 +512,10 @@ main {
       }
       &.contact-phone {
         padding: 0 30px;
-        .btn { display: none; }
+        .btn { 
+          display: none; 
+          @include sm {display: block;}
+        }
       }
       &.contact-form {
         align-items: center; 
@@ -520,6 +527,7 @@ main {
         .contact-title {
           margin-left: 20px;
           @include md {margin-left: 60px;}
+          @include md {margin-left: 20px; margin-right: 20px;}
         }
         span, .adress {
           display: none;
@@ -532,6 +540,7 @@ main {
             width: 400px;
             margin: 0 auto 44px!important;
           }
+          @include sm {width: 272px;}
         }
       }
 
@@ -541,10 +550,11 @@ main {
         align-items: center;
         margin: 38px 60px;
         font-weight: 500;
-
+        @include sm {margin: 30px 30px;}
         h2 {
           position: relative;
           font-size: 28px;
+          @include sm {font-size: 20px;}
           &::after {
             content: attr(data-subtitle);
             display: block;
@@ -553,14 +563,17 @@ main {
             margin-top: 5px;
             font-size: 12px;
             color: $pink;
+            @include sm {font-size: 10px;}
           }
         }
         span {
           font-size: 28px;
           color: $pink;
+          @include sm {font-size: 16px;}
         }
         .adress {
           font-size: 19px;
+          @include sm {font-size: 13px;}
         }
       }
 
@@ -568,6 +581,10 @@ main {
         width: 370px;
         margin: 0 auto 17px;
         font-size: 12px;
+        @include sm {
+          width: 272px;
+          font-size: 10px;
+        }
         &:last-of-type { margin-bottom: 38px; }
       }
     }

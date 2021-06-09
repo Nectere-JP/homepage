@@ -811,6 +811,15 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #contact .contact-grid {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 140px 140px 190px 190px;
+        grid-template-rows: 140px 140px 190px 190px;
+  }
+}
+
 #contact .contact-grid .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -838,6 +847,12 @@ main .nowrap {
 
 #contact .contact-grid .card.contact-phone .btn {
   display: none;
+}
+
+@media (max-width: 767px) {
+  #contact .contact-grid .card.contact-phone .btn {
+    display: block;
+  }
 }
 
 #contact .contact-grid .card.contact-form {
@@ -872,6 +887,13 @@ main .nowrap {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #contact .contact-grid .card.contact-form .contact-title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 #contact .contact-grid .card.contact-form span, #contact .contact-grid .card.contact-form .adress {
   display: none;
 }
@@ -894,6 +916,12 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #contact .contact-grid .card.contact-form .btn {
+    width: 272px;
+  }
+}
+
 #contact .contact-grid .card .contact-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,9 +936,21 @@ main .nowrap {
   font-weight: 500;
 }
 
+@media (max-width: 767px) {
+  #contact .contact-grid .card .contact-title {
+    margin: 30px 30px;
+  }
+}
+
 #contact .contact-grid .card .contact-title h2 {
   position: relative;
   font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  #contact .contact-grid .card .contact-title h2 {
+    font-size: 20px;
+  }
 }
 
 #contact .contact-grid .card .contact-title h2::after {
@@ -923,19 +963,44 @@ main .nowrap {
   color: #e35471;
 }
 
+@media (max-width: 767px) {
+  #contact .contact-grid .card .contact-title h2::after {
+    font-size: 10px;
+  }
+}
+
 #contact .contact-grid .card .contact-title span {
   font-size: 28px;
   color: #e35471;
+}
+
+@media (max-width: 767px) {
+  #contact .contact-grid .card .contact-title span {
+    font-size: 16px;
+  }
 }
 
 #contact .contact-grid .card .contact-title .adress {
   font-size: 19px;
 }
 
+@media (max-width: 767px) {
+  #contact .contact-grid .card .contact-title .adress {
+    font-size: 13px;
+  }
+}
+
 #contact .contact-grid .card .btn {
   width: 370px;
   margin: 0 auto 17px;
   font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  #contact .contact-grid .card .btn {
+    width: 272px;
+    font-size: 10px;
+  }
 }
 
 #contact .contact-grid .card .btn:last-of-type {
