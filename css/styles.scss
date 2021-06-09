@@ -585,7 +585,10 @@ main {
           width: 272px;
           font-size: 10px;
         }
-        &:last-of-type { margin-bottom: 38px; }
+        &:last-of-type { 
+          margin-bottom: 38px; 
+          @include sm {margin-bottom: 32px;}
+        }
       }
     }
   }
@@ -597,6 +600,7 @@ main {
     justify-content: space-between;
     align-items: stretch;
     @include md {flex-direction: column; width: 507px; margin: 0 auto;} 
+    @include sm {width: 100%;}
     .account-id {
       display: flex;
       flex-direction: column;
@@ -616,6 +620,7 @@ main {
       img {
         width: 84px;
         @include md {width: 60px;}
+        @include sm {width: 28px;}
       }
       p {
         margin-top: 30px;
@@ -623,6 +628,7 @@ main {
         font-weight: 500;
         color: #00C4FD;
         @include md {margin: 0; margin-left: 10px; font-size: 26px;}
+        @include sm {font-size: 15px;}
       }
     }
     a.twitter-timeline {

@@ -1007,6 +1007,12 @@ main .nowrap {
   margin-bottom: 38px;
 }
 
+@media (max-width: 767px) {
+  #contact .contact-grid .card .btn:last-of-type {
+    margin-bottom: 32px;
+  }
+}
+
 #SNS .account {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1027,6 +1033,12 @@ main .nowrap {
             flex-direction: column;
     width: 507px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #SNS .account {
+    width: 100%;
   }
 }
 
@@ -1074,6 +1086,12 @@ main .nowrap {
   }
 }
 
+@media (max-width: 767px) {
+  #SNS .account .account-id img {
+    width: 28px;
+  }
+}
+
 #SNS .account .account-id p {
   margin-top: 30px;
   font-size: 33px;
@@ -1086,6 +1104,12 @@ main .nowrap {
     margin: 0;
     margin-left: 10px;
     font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  #SNS .account .account-id p {
+    font-size: 15px;
   }
 }
 
