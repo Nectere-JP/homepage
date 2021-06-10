@@ -38,6 +38,17 @@ body {
   header {background-image: url("../imgs/header-bg.jpg") !important}
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -63,11 +74,18 @@ header {
     @include sm {width: 296px;}
   }
   p {
+    display: inline-block;
+    width: 840px;
     font-family: source-han-serif-japanese, serif;
     font-weight: 600;
     font-size: 35px;
+    text-align: center;
     color: #fff;
     z-index: 100;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: typing 4s steps(24), caret .4s 15;
+    white-space: nowrap;
     @include md {font-size: 21px;}
     @include sm {font-size: 13px;}
   }
@@ -631,10 +649,10 @@ main {
         @include sm {font-size: 15px;}
       }
     }
-    .twitter-timeline {
+    .timeline-card {
       flex-grow: 1;
       @include sm {
-        max-height: 350px;
+        height: 350px;
       }
     }
   }

@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="./css/destyle.css">
   <script src="./js/modernizr-custom.js"></script>
   <title>Nectere</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  >
   <script>
     (function(d) {
       var config = {
@@ -30,12 +34,12 @@
   </header>
   <main>
     <section id="services">
-      <h1 data-subtitle="Services">事業内容</h1>
-      <div class="service animate__backInLeft">
-        <div class="card image-card">
+      <h1 data-subtitle="Services" class="wow animate__animated animate__fadeInUp">事業内容</h1>
+      <div class="service">
+        <div class="card image-card wow animate__animated animate__fadeInLeft">
           <img src="./imgs/homepage-development.svg" alt="ボームページ・Webアプリ開発">
         </div>
-        <div class="card content-card">
+        <div class="card content-card wow animate__animated animate__fadeInRight">
           <p class="card-number">01</p>
           <h2>Webアプリ, <br/> ホームページ制作</h2>
           <p class="description">デザインからコーディング、サーバーへのアップロードまで一貫した体制で対応いたします。</p>
@@ -48,10 +52,10 @@
         </div>
       </div>
       <div class="service">
-        <div class="card image-card">
+        <div class="card image-card wow animate__animated animate__fadeInRight">
           <img src="./imgs/mal-learn-image.svg" alt="ボームページ・Webアプリ, ホームページ制作事業アプリ開発">
         </div>
-        <div class="card content-card">
+        <div class="card content-card wow animate__animated animate__fadeInLeft">
           <p class="card-number">02</p>
           <h2 class="h2-with-subtitle">
             <picture>
@@ -61,7 +65,9 @@
             <span>「意味のある教育をみんなに」</span>
             Mal Learn
           </h2>
-          <p class="description">生徒と先生、そして生徒同士の繋がりを重視した、映像授業サービスの概念を覆すアプリケーションです。</p>
+          <p class="description">
+            生徒と先生、そして生徒同士の繋がりを重視した、映像授業サービスの概念を覆すアプリケーションです。
+          </p>
           <a class="btn">
             Mal Learn
             <div class="btn-icon btn-icon-blue"></div>
@@ -70,43 +76,39 @@
       </div>
     </section>
     <section id="mission">
-      <h1 data-subtitle="Mission">ミッション</h1>
-      <p class="MVV-title">
+      <h1 data-subtitle="Mission" class="wow animate__animated animate__fadeInUp">ミッション</h1>
+      <p class="MVV-title wow animate__animated animate__fadeInUp">
         <span class="nowrap">青年が、</span>
         <span class="nowrap">大人とともにチャレンジし、</span>
         <span class="nowrap">ともに成長できる社会へ。</span>
       </p>
     </section>
     <section id="vision">
-      <h1 data-subtitle="Vision">ビジョン</h1>
-      <p class="MVV-title">
+      <h1 data-subtitle="Vision" class="wow animate__animated animate__fadeInUp">ビジョン</h1>
+      <p class="MVV-title wow animate__animated animate__fadeInUp">
         <span class="nowrap">全ての未成年が、</span>
         <span class="nowrap">養田になることを目指す。</span>
       </p>
     </section>
     <section id="value">
-      <h1 data-subtitle="Value">バリュー</h1>
-      <p class="MVV-title">
+      <h1 data-subtitle="Value" class="wow animate__animated animate__fadeInUp">バリュー</h1>
+      <p class="MVV-title wow animate__animated animate__fadeInUp">
         <span class="nowrap">1.</span>
         <span class="nowrap">出会いを大切に。</span>
       </p>
-      <p class="MVV-title">
+      <p class="MVV-title wow animate__animated animate__fadeInUp">
         <span class="nowrap">2.</span>
         <span class="nowrap">礼儀を大切に。</span>
       </p>
-      <p class="MVV-title">
+      <p class="MVV-title wow animate__animated animate__fadeInUp">
         <span class="nowrap">3.</span>
         <span class="nowrap">自分を大切に。</span>
       </p>
-      <p class="MVV-title">
-        <span class="nowrap">4.</span>
-        <span class="nowrap">全ては人のために。</span>
-      </p>
     </section>
     <section id="founding-members">
-      <h1 data-subtitle="Founding members">創業メンバー</h1>
+      <h1 data-subtitle="Founding members" class="wow animate__animated animate__fadeInUp">創業メンバー</h1>
       <div class="members-container">
-        <div class="member card">
+        <div class="member card wow animate__animated animate__fadeInLeft">
           <picture>
             <source srcset="./imgs/members/takahiro.webp" type="image/webp">
             <img src="./imgs/members/takahiro.jpg" alt="養田貴大">
@@ -142,7 +144,7 @@
             <span class="nowrap">よろしくお願いいたします。</span>
           </p>
         </div>
-        <div class="member card">
+        <div class="member card wow animate__animated animate__fadeIn">
           <picture>
             <source srcset="./imgs/members/takahiro.webp" type="image/webp">
             <img src="./imgs/members/takahiro.jpg" alt="養田貴大">
@@ -178,7 +180,7 @@
             <span class="nowrap">よろしくお願いいたします。</span>
           </p>
         </div>
-        <div class="member card">
+        <div class="member card wow animate__animated animate__fadeInRight">
           <picture>
             <source srcset="./imgs/members/takahiro.webp" type="image/webp">
             <img src="./imgs/members/takahiro.jpg" alt="養田貴大">
@@ -217,8 +219,8 @@
       </div>
     </section>
     <section id="company">
-      <h1 data-subtitle="Company">基本情報</h1>
-      <table>
+      <h1 data-subtitle="Company" class="wow animate__animated animate__fadeInUp">基本情報</h1>
+      <table class="wow animate__animated animate__fadeInUp">
         <tr>
           <th>会社名</th>
           <td>合同会社 Nectere</td>
@@ -249,9 +251,9 @@
       </table>
     </section>
     <section id="contact">
-      <h1 data-subtitle="Contact">お問い合わせ</h1>
+      <h1 data-subtitle="Contact" class="wow animate__animated animate__fadeInUp">お問い合わせ</h1>
       <div class="contact-grid">
-        <div class="card contact-email">
+        <div class="card contact-email wow animate__animated animate__fadeInLeft">
           <div class="contact-title">
             <h2 data-subtitle="By e-mail">メールで</h2>
             <span>：</span>
@@ -266,7 +268,7 @@
             <div class="btn-icon btn-icon-pink"></div>
           </a>
         </div>
-        <div class="card contact-phone" >
+        <div class="card contact-phone wow animate__animated animate__fadeInRight">
           <div class="contact-title">
             <h2 data-subtitle="By phone">電話で</h2>
             <span>：</span>
@@ -277,7 +279,7 @@
             <div class="btn-icon btn-icon-pink"></div>
           </a>
         </div>
-        <div class="card contact-form">
+        <div class="card contact-form wow animate__animated animate__fadeInRight">
           <div class="contact-title">
             <h2 data-subtitle="Through the contact form">フォームから</h2>
             <span>：</span>
@@ -291,16 +293,18 @@
       </div>
     </section>
     <section id="SNS">
-      <h1 data-subtitle="SNS account">公式SNS</h1>
+      <h1 data-subtitle="SNS account" class="wow animate__animated animate__fadeInUp">公式SNS</h1>
       <div class="account">
-        <div class="account-id card">
+        <div class="account-id card wow animate__animated animate__fadeInLeft">
           <picture>
             <source srcset="./imgs/twitter.webp" type="image/webp">
             <img src="./imgs/twitter.jpg" alt="Twitterのロゴ">
           </picture>
           <p>@Nectere-jp</p>
         </div>
-        <a class="twitter-timeline card" data-width="650" data-height="650" href="https://twitter.com/nectere_jp?ref_src=twsrc%5Etfw">Tweets by nectere_jp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="timeline-card card wow animate__animated animate__fadeInRight">
+          <a class="twitter-timeline" data-width="650" data-height="650" href="https://twitter.com/nectere_jp?ref_src=twsrc%5Etfw">Tweets by nectere_jp</a>
+        </div>
       </div>
     </section>
   </main>
@@ -328,5 +332,8 @@
       </ul>
     </nav>
   </footer>
+  <script src="./js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

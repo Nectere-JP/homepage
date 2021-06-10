@@ -9,6 +9,30 @@ body {
   background-image: url("../imgs/header-bg.jpg") !important;
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,11 +82,19 @@ header .logo {
 }
 
 header p {
+  display: inline-block;
+  width: 840px;
   font-family: source-han-serif-japanese, serif;
   font-weight: 600;
   font-size: 35px;
+  text-align: center;
   color: #fff;
   z-index: 100;
+  overflow: hidden;
+  border-right: 2px solid transparent;
+  -webkit-animation: typing 4s steps(24), caret 0.4s 15;
+          animation: typing 4s steps(24), caret 0.4s 15;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1113,15 +1145,15 @@ main .nowrap {
   }
 }
 
-#SNS .account .twitter-timeline {
+#SNS .account .timeline-card {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
 @media (max-width: 767px) {
-  #SNS .account .twitter-timeline {
-    max-height: 350px;
+  #SNS .account .timeline-card {
+    height: 350px;
   }
 }
 
