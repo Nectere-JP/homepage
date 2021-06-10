@@ -83,7 +83,7 @@ header .logo {
 
 header p {
   display: inline-block;
-  width: 840px;
+  width: 980px;
   font-family: source-han-serif-japanese, serif;
   font-weight: 600;
   font-size: 35px;
@@ -92,20 +92,22 @@ header p {
   z-index: 100;
   overflow: hidden;
   border-right: 2px solid transparent;
-  -webkit-animation: typing 4s steps(24), caret 0.4s 15;
-          animation: typing 4s steps(24), caret 0.4s 15;
+  -webkit-animation: typing 4s steps(28), caret 0.4s 15;
+          animation: typing 4s steps(28), caret 0.4s 15;
   white-space: nowrap;
 }
 
 @media screen and (max-width: 1200px) {
   header p {
     font-size: 21px;
+    width: 589px;
   }
 }
 
 @media (max-width: 767px) {
   header p {
-    font-size: 13px;
+    font-size: 10px;
+    width: 282px;
   }
 }
 
@@ -1152,8 +1154,8 @@ main .nowrap {
 }
 
 @media (max-width: 767px) {
-  #SNS .account .timeline-card {
-    height: 350px;
+  #SNS .account .timeline-card .twitter-timeline {
+    max-height: 350px;
   }
 }
 
