@@ -647,6 +647,8 @@ main .nowrap {
   text-align: center;
   color: #655959;
   margin: 60px 0 10px;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 @media (max-width: 767px) {
